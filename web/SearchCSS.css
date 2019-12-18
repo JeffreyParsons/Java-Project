@@ -1,0 +1,63 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 2, 2018, 2:43:02 PM
+    Author     : gonzalezr5255
+*/
+
+nav ul li{
+   float:right;
+   display:inline;
+   margin:5px;
+   padding:2px;
+   border: solid black 1px;
+   background-color:rgb(7,178,88);
+   color:white;
+   
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+}
+ul li a:hover {
+    text-decoration: underline;
+    color:rgb(3,120,174);
+}
+input,textArea{
+    background-color: white;
+    
+}
+body{
+    background-color: rgb(3,120,174);
+    color: white;
+    font-family: franklin gothic;
+    background-image: url("Resources/images/hawk1.png");
+    background-repeat: no-repeat;
+    background-size:50%;
+    background-position: inherit;
+}
+.user-table{   
+	border-collapse:collapse;
+}
+
+.user-table-header{
+	text-align:center;
+        background:none repeat scroll 0 0 #07aa58;
+	border-bottom:4px solid white;
+	padding:15px;
+}
+
+.user-table-odd-row{
+	text-align:center;
+        background:none repeat scroll 0 0 #0378ae;
+	border-top:4px solid #0378ae;
+}
+
+.user-table-even-row{
+	text-align:center;
+	background:none repeat scroll 0 0 #07aa58;
+	border-top:4px solid #07aa58;
+}

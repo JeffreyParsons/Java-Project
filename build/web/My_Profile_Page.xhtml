@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>My Profile Page</title>
+        <link href="Profile CSS.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    
+    
+    <h:body>
+        <nav>
+            <ul>
+                <li><a href="Registration.xhtml">Registration</a></li>
+                <li><a href="Profile_Page.xhtml">Profile Page</a></li>
+                <li><a href="SearchUser.xhtml">Search</a></li>
+                <li><a href="SearchAdmin.xhtml">Admin</a></li>
+            </ul>
+        </nav>
+        <header id="header">
+            <h1>Linum Profile</h1>
+        </header>
+        
+        <section id="main">
+            <img src="Images/nobody_m.original.jpg" alt="" id="profilePic"/>
+            
+            <div id="info">
+                <h1 id="name"><h:outputText id="nameTxt" value="#{userDisplayBean.fname} #{userDisplayBean.lname}" /></h1>
+
+                <h3>Work Experience</h3>
+                <div id="work">
+                    <h:outputText id="employer" value="Employer: #{userDisplayBean.employer}" /> <br />
+                    <h:outputText id="jobTitle" value="Job Title: #{userDisplayBean.title}" /> <br />
+                    <h:outputText id="workDates" value="Start - End: #{userDisplayBean.jobStart} / #{userDisplayBean.jobEnd}" />
+                </div>
+
+                <h3>Education</h3>
+                <div id="education">
+                    <h:outputText id="school" value="School: #{userDisplayBean.school}" /> <br />
+                    <h:outputText id="major" value="Major: #{userDisplayBean.major}" /> <br />
+                    <h:outputText id="schoolDates" value="Start - End: #{userDisplayBean.schoolStart} / #{userDisplayBean.schoolEnd}" />
+                </div>
+            </div>
+        </section>
+        
+        <section id="connections">
+            <h1><u>Connection Requests</u></h1>
+            
+            <table>
+                <tr>
+                    <h:form>
+                        <td><img src="Images/profpic.jpg" alt="" id="smallPic"/></td>
+                        <td><h:outputText id="connectNameTxt" value="User Name #{user.firstName} #{user.lastName}" /></td>
+                        <td><h:commandButton id="acceptButton" value="Accept" action="#{accept}" /></td>
+                        <td><h:commandButton id="ignoreButton" value="Ignore" action="#{ignore}" /></td>
+                    </h:form>
+                </tr>
+                <tr>
+                    <h:form>
+                        <td><img src="Images/profpic.jpg" alt="" id="smallPic"/></td>
+                        <td><h:outputText id="connectNameTxt1" value="User Name #{user.firstName} #{user.lastName}" /></td>
+                        <td><h:commandButton id="acceptButton" value="Accept" action="#{accept}" /></td>
+                        <td><h:commandButton id="ignoreButton" value="Ignore" action="#{ignore}" /></td>
+                    </h:form>
+                </tr>
+            </table>
+        </section>
+        
+    </h:body>
+</html>
+

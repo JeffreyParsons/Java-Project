@@ -1,0 +1,120 @@
+/* 
+    Created on : Nov 12, 2018, 7:50:12 PM
+    Author     : jeff
+*/
+
+nav ul li{
+   float:right;
+   display:inline;
+   margin:5px;
+   padding:2px;
+   border: solid black 1px;
+   background-color:rgb(3,120,174);
+   color:white;
+   
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+}
+ul li a:hover {
+    text-decoration: underline;
+    color:rgb(7,178,88);
+}
+
+body {
+    display: block;
+    background-color: rgb(3, 120, 174);
+    font: Century Gothic;
+    color: white;
+}
+
+* {
+    font-family: century-gothic, sans-serif;
+}
+
+header {
+    display: block;
+    margin: 15px;
+    background-color: rgba(7, 178, 88, 0.8);
+    width: auto;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+header > h1 {
+    padding-left: 10px;
+}
+
+#main {
+    display: block;
+    background-color: rgba(0, 177, 89, 0.8);
+    margin: 15px;
+    overflow: hidden;
+    width: auto;
+    border-radius: 10px;
+}
+
+img {
+    clear: left;
+    float: left;
+    height: 300px;
+    width: 300px;
+    padding: 15px;
+}
+
+#buttonContainer {
+    background-color: rgb(0, 125, 180);
+    clear: both;
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+#info {
+    float: left;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    margin-top: -15px;
+    overflow: auto;
+}
+
+#connections {
+    display: block;
+    background-color: rgba(7, 178, 88, 0.8);
+    margin: 15px;
+    overflow: hidden;
+    width: auto;
+    border-radius: 10px;
+}
+
+#connections > h1 {
+    padding-left: 10px;
+}
+
+table {
+    padding: 10px;
+}
+
+td {
+    vertical-align: middle;
+    width: auto;
+}
+
+#smallPic {
+    height: 30px;
+    width: 30px;
+    padding: 0px;
+}
+
+#name {
+    font-size: 35px;
+}
+
+#main h3 {
+    text-decoration: underline;
+}
+

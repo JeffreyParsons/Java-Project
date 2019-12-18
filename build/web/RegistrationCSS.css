@@ -1,0 +1,84 @@
+
+/*school colors
+rgb(3,120,174) blue
+rgb(7,178,88) green */
+
+
+/*Linum style*/
+
+
+nav ul li{
+   float:right;
+   display:inline;
+   margin:5px;
+   padding:2px;
+   border: solid black 1px;
+   background-color:rgb(3,120,174);
+   color:white;
+   
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+}
+ul li a:hover {
+    text-decoration: underline;
+    color:rgb(7,178,88);
+}
+h1{
+    font-family: century gothic;
+    background-color: rgba(7,178,88,0.8);
+    padding: 5px;
+    font-size: 60px;
+}
+
+/*h2 style*/
+h2{
+    font-size: 20px;
+    font-family: franklin gothic;
+}
+
+/*body styles */
+
+body{
+    
+    background-color: rgb(3,120,174);
+    color: white;
+    font-weight: bold;
+    font-family: franklin gothic;
+    background-image: url("Images/Hawk2.png");
+    background-repeat:no-repeat;
+    background-size: 80%;
+    background-position:inherit;
+}
+
+/* Displaying the sections next to each other*/
+
+input, textarea{
+    background-color: rgba(7,178,88,0.5);
+    color:white;
+        
+}
+#user, #Employer, #Education {
+    
+    float: left;
+    display: inline;
+}
+
+/*Employer Job Description styles*/
+#Employer textarea{
+    width: 250px;
+    height: 100px;
+}
+
+/*register button */
+
+#command{
+    background-color: rgb(7,178,88);
+    clear:left;
+    float:left;
+    padding: 1px;
+    margin: 1px;
+    border: 1px;
+    border-color:rgb(7,178,88);
+}

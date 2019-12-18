@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Search User</title>
+        <link href="SearchCSS.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    <h:body>
+        <nav>
+            <ul>
+                <li><a href="Registration.xhtml">Registration</a></li>
+                <li><a href="Profile_Page.xhtml">Profile Page</a></li>
+                <li><a href="SearchAdmin.xhtml">Admin</a></li>
+                <li><a href="My_Profile_Page.xhtml">My Profile</a></li>
+                
+            </ul>
+        </nav>
+        <h:form>
+            <br/>
+            <br/>
+       <h:outputLabel>Name</h:outputLabel> 
+       <span style="padding-left:5px"></span>
+       <h:inputText id="userNameInput" value="#{searchUserBean.userNameInput}" ></h:inputText>
+       <span style="padding-left:5px"></span>
+       <h:commandButton action="#{searchUserBean.search()}" value="Search"></h:commandButton>        
+       
+       <span style="padding-left:50px"></span>
+       
+       <h:outputLabel>City</h:outputLabel>
+       <span style="padding-left:5px"></span>
+       <h:inputText id="cityInput" value="#{searchUserBean.cityInput}"></h:inputText>
+       <span style="padding-left:5px"></span>
+       <h:commandButton action="#{searchUserBean.search()}" value="Search"  ></h:commandButton>
+       
+       <br/>
+       <br/>
+       <br/>
+ 
+            <h:dataTable value="#{searchUserBean.userList}" var = "user" cellpadding= "10px" styleClass="user-table" headerClass="user-table-header" rowClasses="user-table-odd-row,user-table-even-row">            
+               
+                <h:column>
+                    <f:facet name="header">First Name</f:facet>
+                    #{user.fname}
+                </h:column>                
+                <h:column>
+                    <f:facet name="header">Last Name</f:facet>
+                    #{user.lname}
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">City</f:facet>
+                    #{user.city}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Email</f:facet>
+                    #{user.email}
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header"></f:facet>
+                    <span style="padding-left:50px"></span>
+                    <h:commandButton value="Connect"></h:commandButton>
+                </h:column>   
+            
+            </h:dataTable>
+            
+        </h:form>
+    </h:body>
+</html>
+

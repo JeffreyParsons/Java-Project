@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    
+    <h:head>
+        <title>Registration Page</title>
+        <link href="RegistrationCSS.css" rel="stylesheet" type="text/css"/>
+        
+    </h:head>
+    <h:body>
+        <nav>
+            <ul>
+                <li><a href="Profile_Page.xhtml">Profile Page</a></li>
+                <li><a href="SearchUser.xhtml">Search</a></li>
+                <li><a href="SearchAdmin.xhtml">Admin</a></li>
+                <li><a href="My_Profile_Page.xhtml">My Profile</a></li>
+            </ul>
+        </nav>
+        <h1>LINUM</h1>
+        
+        <h2>Please fill out the user registration page</h2>
+        <h:form id="form">
+            <div id="user">
+                
+            <h:panelGrid columns="2">
+              <h:outputText value="Admin"></h:outputText>
+              <h:inputText id="AdminInput"  required="true"
+                             requiredMessage="Admin"
+                             value="#{validationBean.admin}"></h:inputText>  
+              <h:outputText value="Email"></h:outputText>
+                <h:inputText id="emailInputText" required="true"
+                             requiredMessage="Your email is required"
+                             value="#{validationBean.email}"></h:inputText>
+              <h:outputText value="First Name"></h:outputText>
+                <h:inputText id="fnameInputText" required="true" 
+                             requiredMessage="Your first name is required"
+                             value="#{validationBean.fname}"></h:inputText>
+              <h:outputText value="Last Name"></h:outputText>
+                <h:inputText id="lnameInputText" required="true" 
+                             requiredMessage="Your last name is required"
+                             value="#{validationBean.lname}"></h:inputText>
+              <h:outputText value="Date of Birth"></h:outputText>
+                <h:inputText id="dobInputText" required="true" 
+                             requiredMessage="Your date of birth is required"
+                             value="#{validationBean.DOB}"></h:inputText>
+              <h:outputText value="City"></h:outputText>
+                <h:inputText id="cityInputText" required="true" 
+                             requiredMessage="Your city is required"
+                             value="#{validationBean.city}"></h:inputText>
+              <h:outputText value="State"></h:outputText>
+                <h:inputText id="stateInputText"
+                             value="#{validationBean.state}"></h:inputText>
+              <h:outputText value="Zip Code"></h:outputText>
+                <h:inputText id="ZipInputText" required="true" 
+                             requiredMessage="Your zip code is required"
+                             value="#{validationBean.zip}"></h:inputText>
+              <h:outputText value="Country"></h:outputText>
+                <h:inputText id="countryInputText" required="true" 
+                             requiredMessage="Your country is required"
+                             value="#{validationBean.country}"></h:inputText>
+              <h:outputText value="Password"></h:outputText>
+                <h:inputText id="passwordInputText" required="true" 
+                             requiredMessage="Your password is required"
+                             value="#{validationBean.password}"></h:inputText>
+             
+            </h:panelGrid>
+            </div>
+            <div id="Employer">
+            <h:panelGrid columns="2">
+                <h:outputText value="Employer"></h:outputText>
+                <h:inputText id="employerInput" required="true" 
+                             requiredMessage="Your employer is required"
+                             value="#{validationBean.employer}"></h:inputText>
+                <h:outputText value="JobTitle"></h:outputText>
+                <h:inputText id="JobTitleInput" required="true" 
+                             requiredMessage="Your job title is required"
+                             value="#{validationBean.title}"></h:inputText>
+                <h:outputText value="JobDescription"></h:outputText>
+                <h:inputTextarea id="JobDescription"  required="true" 
+                             requiredMessage="Your job description is required"
+                             value="#{validationBean.description}"></h:inputTextarea>
+                <h:outputText value="JobStartDate"></h:outputText>
+                <h:inputText id="JobStartDateInput" required="true" 
+                             requiredMessage="Your start date is required"
+                             value="#{validationBean.jobStart}"></h:inputText>
+                <h:outputText value="JobEndDate"></h:outputText>
+                <h:inputText id="JobEndDateInput" required="true" 
+                             requiredMessage="Your end date is required"
+                             value="#{validationBean.jobEnd}"></h:inputText>
+            </h:panelGrid>
+            </div>
+            
+            <div id="Education">
+            <h:panelGrid columns="2">
+                <h:outputText value="SchoolName"></h:outputText>
+                <h:inputText id="SchoolNameInput" required="true" 
+                             requiredMessage="Your School name is required"
+                             value="#{validationBean.schoolName}"></h:inputText>
+                <h:outputText value="Major"></h:outputText>
+                <h:inputText id="MajorInput" required="true" 
+                             requiredMessage="Your major is required"
+                             value="#{validationBean.major}"></h:inputText>
+                <h:outputText value="SchoolStartDate"></h:outputText>
+                <h:inputText id="SchoolStartDateInput" required="true" 
+                             requiredMessage="Your Start Date is required"
+                             value="#{validationBean.schoolStart}"></h:inputText>
+                <h:outputText value="School End Date"></h:outputText>
+                <h:inputText id="SchoolEndDateInput" required="true" 
+                             requiredMessage="YourEndDate is required"
+                             value="#{validationBean.schoolEnd}"></h:inputText>
+            </h:panelGrid>
+            </div>
+            <div id="command">
+            <h:commandButton value="Register" action="#{validationBean.registerAUser}"></h:commandButton>
+            <h:outputText escape="false"></h:outputText>
+            </div>
+            
+        </h:form>
+        
+        
+    </h:body>
+</html>
+
